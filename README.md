@@ -1,2 +1,2 @@
-# foundry-mnm3e
-Custom Mutants and Masterminds 3e system for Foundry VTT
+# Mutants & Masterminds 3e for Foundry VTT
+Custom Mutants & Masterminds 3e system for Foundry VTT
