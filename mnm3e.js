@@ -12,8 +12,6 @@ Hooks.once("init", function() {
 
     Items.unregisterSheet("core", ItemSheet);
     Items.registerSheet("mnm3e", MM3ItemSheet, { makeDefault: true });
-
-    registerHandlebarsPartial("hero-skill", "systems/mnm3e/templates/partials/hero-skill-block.hbs");
     
     registerHandlebarsHelpers();
 });

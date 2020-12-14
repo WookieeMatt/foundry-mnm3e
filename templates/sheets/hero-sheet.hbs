@@ -14,44 +14,32 @@
         {{/each}}
     </div>
 
-    <div>-</div>
     {{!-- SKILLS --}}
     <div class="hero-skills">
         <div class="header">{{localize "mnm3e.hero.skills.title"}}</div>
-        {{> hero-skill skill="mnm3e.hero.skills.acrobatics" a_name="data.skills.acrobatics" a_value=data.skills.acrobatics}}
-        {{> hero-skill skill="mnm3e.hero.skills.athletics" a_name="data.skills.athletics" a_value=data.skills.athletics}}
-        {{> hero-skill skill="mnm3e.hero.skills.close-combat" a_name="data.skills.close-combat" a_value=data.skills.close-combat}}
-        {{> hero-skill skill="mnm3e.hero.skills.deception" a_name="data.skills.deception" a_value=data.skills.deception}}
-        {{> hero-skill skill="mnm3e.hero.skills.expertise" a_name="data.skills.expertise" a_value=data.skills.expertise}}
-        {{> hero-skill skill="mnm3e.hero.skills.insight" a_name="data.skills.insight" a_value=data.skills.insight}}
-        {{> hero-skill skill="mnm3e.hero.skills.intimidation" a_name="data.skills.intimidation" a_value=data.skills.intimidation}}
-        {{> hero-skill skill="mnm3e.hero.skills.investigation" a_name="data.skills.investigation" a_value=data.skills.investigation}}
-        {{> hero-skill skill="mnm3e.hero.skills.ranged-combat" a_name="data.skills.ranged-combat" a_value=data.skills.ranged-combat}}
-        {{> hero-skill skill="mnm3e.hero.skills.sleight-of-hand" a_name="data.skills.sleight-of-hand" a_value=data.skills.sleight-of-hand}}
-        {{> hero-skill skill="mnm3e.hero.skills.stealth" a_name="data.skills.stealth" a_value=data.skills.stealth}}
-        {{> hero-skill skill="mnm3e.hero.skills.technology" a_name="data.skills.technology" a_value=data.skills.technology}}
-        {{> hero-skill skill="mnm3e.hero.skills.treatment" a_name="data.skills.treatment" a_value=data.skills.treatment}}
-        {{> hero-skill skill="mnm3e.hero.skills.vehicles" a_name="data.skills.vehicles" a_value=data.skills.vehicles}}
+        {{#each data.skills as |skill key|}}
+            <div class="hero-skill">
+                <label>{{localize (concat "mnm3e.hero.skills." key)}}</label>
+                <span><input class="content" name="data.skills.{{key}}.value" value="{{skill.value}}" type="text" data-dtype="Number"/></span>
+            </div>
+        {{/each}}
     </div>
-    <div>-</div>
+    
     {{!-- ADVANTAGES --}}
     <div class="hero-advantages">
 
     </div>
 
-    <div>-</div>
     {{!-- POWERS --}}
     <div class="hero-pwoers">
 
     </div>
 
-    <div>-</div>
     {{!-- COMPLICATIONS --}}
     <div class="hero-complications">
 
     </div>
 
-    <div>-</div>
     {{!-- DEFENSE --}}
     <div class="hero-defense">
 
