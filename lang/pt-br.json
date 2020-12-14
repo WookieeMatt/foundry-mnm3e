@@ -1,0 +1,62 @@
+{
+    "mnm3e": {
+        "hero": {
+            "abilities": {
+                "strength": "Força",
+                "stamina": "Vigor",
+                "agility": "Agilidade",
+                "dexterity": "Destreza",
+                "fighting": "Luta",
+                "intellect": "Intelecto",
+                "awareness": "Prontidão",
+                "presence": "Presença",
+                "str": "FOR",
+                "sta": "VIG",
+                "agi": "AGI",
+                "dex": "DES",
+                "fig": "LUT",
+                "int": "INT",
+                "awa": "PRO",
+                "pre": "PRE"
+            },
+            "skills": {
+                "title": "PERÍCIAS",
+                "acrobatics": "Acrobacia",
+                "athletics": "Atletismo",
+                "close-combat": "Combate Corpo-a-Corpo",
+                "deception": "Enganação",
+                "expertise": "Especialidade",
+                "insight": "Intuição",
+                "intimidation": "Intimidação",
+                "investigation": "Investigação",
+                "ranged-combat": "Combate à Distância",
+                "sleight-of-hand": "Prestidigitação",
+                "stealth": "Furtividade",
+                "technology": "Tecnologia",
+                "treatment": "Tratamento",
+                "vehicles": "Veículos"
+            }
+        },
+        "weapon": {
+            "category": "Categoria",
+            "categories": {
+                "simple": "Simples",
+                "archaic": "Arcaica",
+                "exotic": "Exótica"
+            },
+            "effect": "Efeito",
+            "critical": "Crítico",
+            "cost": "Custo"
+        },
+        "armor": {
+            "category": "Categoria",
+            "categories": {
+                "archaic": "Arcaica",
+                "modern": "Moderna",
+                "shields": "Escudo"
+            },
+            "effect": "Efeito",
+            "cost": "Custo"
+        }
+    }
+}

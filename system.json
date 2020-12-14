@@ -1,0 +1,34 @@
+{
+    "name": "mnm3e",
+    "title": "Mutantns & Masterminds 3e",
+    "description": "",
+    "version": "0.0.1",
+    "author": "Lucas Straub",
+    "minimumCoreVersion": "0.7.7",
+    "compatibleCoreVersion": "0.7.7",
+    "esmodules":[
+        "mnm3e.js"
+    ],
+    "styles":[
+        "mnm3e.css"
+    ],
+    "pack":[
+
+    ],
+    "languages":[
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        },
+        {
+            "lang": "pt-br",
+            "name": "Português (Brasil)",
+            "path": "lang/pt-br.json"
+        }
+    ],
+    "gridDistance": 1.5,
+    "gridUnits": "m",
+    "primaryTokenAttribute": "wounds",
+    "initiative": "1d20"
+  }

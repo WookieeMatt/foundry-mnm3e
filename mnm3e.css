@@ -1,0 +1,54 @@
+.header
+{
+    background-color: #00978e;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
+
+.content
+{
+    color: black;
+    background-color: #cae1e0;
+}
+
+input[type="text"].content
+{
+    color: black;
+    background-color: #cae1e0;
+    font-weight: bold;
+}
+
+/* Abilities */
+.hero-ability
+{
+    background-color: #00978e;
+    width: 12.5%; 
+    display: inline; 
+    float: left;
+}
+
+.hero-ability .header
+{
+    text-align: center;     
+}
+
+/* Skills */
+.hero-skill label
+{
+    text-align: left;
+    clear: both;
+    float:left;
+}
+
+.hero-skill span
+{
+    display: block;
+    overflow: hidden;
+    padding: 0 4px 0 6px
+}
+
+.hero-skill input
+{
+    width: 100%;
+}

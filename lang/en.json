@@ -1,0 +1,62 @@
+{
+    "mnm3e": {
+        "hero": {
+            "abilities": {
+                "strength": "Strength",
+                "stamina": "Stamina",
+                "agility": "Agility",
+                "dexterity": "Dexterity",
+                "fighting": "Fighting",
+                "intellect": "Intellect",
+                "awareness": "Awareness",
+                "presence": "Presence",
+                "str": "STR",
+                "sta": "STA",
+                "agi": "AGI",
+                "dex": "DEX",
+                "fig": "FIG",
+                "int": "INT",
+                "awa": "AWA",
+                "pre": "PRE"
+            },
+            "skills": {
+                "title": "SKILLS",
+                "acrobatics": "Acrobatics",
+                "athletics": "Athletics",
+                "close-combat": "Close-combat",
+                "deception": "Deception",
+                "expertise": "Expertise",
+                "insight": "Insight",
+                "intimidation": "Intimidation",
+                "investigation": "Investigation",
+                "ranged-combat": "Ranged-combat",
+                "sleight-of-hand": "Sleight-of-hand",
+                "stealth": "Stealth",
+                "technology": "Technology",
+                "treatment": "Treatment",
+                "vehicles": "Vehicles"
+            }
+        },
+        "weapon": {
+            "category": "Category",
+            "categories": {
+                "simple": "Simple",
+                "archaic": "Archaic",
+                "exotic": "Exotic"
+            },
+            "effect": "Effect",
+            "critical": "Critical",
+            "cost": "Cost"
+        },
+        "armor": {
+            "category": "Category",
+            "categories": {
+                "archaic": "Archaic",
+                "modern": "Modern",
+                "shields": "Shields"
+            },
+            "effect": "Effect",
+            "cost": "Cost"
+        }
+    }
+}
