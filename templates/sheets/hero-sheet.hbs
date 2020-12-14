@@ -6,14 +6,12 @@
 
     {{!-- ABILITIES --}}
     <div class="hero-abilities">
-        {{> hero-ability ability="mnm3e.hero.abilities.str" a_name="data.abilities.strength" a_value=data.abilities.strength}}
-        {{> hero-ability ability="mnm3e.hero.abilities.sta" a_name="data.abilities.stamina" a_value=data.abilities.stamina}}
-        {{> hero-ability ability="mnm3e.hero.abilities.agi" a_name="data.abilities.agility" a_value=data.abilities.agility}}
-        {{> hero-ability ability="mnm3e.hero.abilities.dex" a_name="data.abilities.dexterity" a_value=data.abilities.dexterity}}
-        {{> hero-ability ability="mnm3e.hero.abilities.fig" a_name="data.abilities.fighting" a_value=data.abilities.fighting}}
-        {{> hero-ability ability="mnm3e.hero.abilities.int" a_name="data.abilities.intellect" a_value=data.abilities.intellect}}
-        {{> hero-ability ability="mnm3e.hero.abilities.awa" a_name="data.abilities.awareness" a_value=data.abilities.awareness}}
-        {{> hero-ability ability="mnm3e.hero.abilities.pre" a_name="data.abilities.presence" a_value=data.abilities.presence}}
+        {{#each data.abilities as |ability key|}}
+            <div class="hero-ability">
+                <div class="header" for="data.abilities.{{key}}.value">{{localize (concat "mnm3e.hero.abilities.short." key)}}</div>
+                <input class="content" name="data.abilities.{{key}}.value" value="{{ability.value}}" type="text" data-dtype="Number"/>
+            </div>
+        {{/each}}
     </div>
 
     <div>-</div>

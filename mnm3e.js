@@ -13,17 +13,24 @@ Hooks.once("init", function() {
     Items.unregisterSheet("core", ItemSheet);
     Items.registerSheet("mnm3e", MM3ItemSheet, { makeDefault: true });
 
-    preloadHandlebar("hero-ability", "systems/mnm3e/templates/partials/hero-ability-block.hbs");
-    preloadHandlebar("hero-skill", "systems/mnm3e/templates/partials/hero-skill-block.hbs");
+    registerHandlebarsPartial("hero-skill", "systems/mnm3e/templates/partials/hero-skill-block.hbs");
+    
+    registerHandlebarsHelpers();
 });
 
-function preloadHandlebar(name, path) {
+function registerHandlebarsPartial(name, path) {
     preloadTemplate(path)
         .then(function (templates) {
             Handlebars.registerPartial(name, templates[0]);
         });
 }
 
-async function preloadTemplate(path){
+async function preloadTemplate(path) {
     return loadTemplates([path]);
+}
+
+function registerHandlebarsHelpers() {
+    Handlebars.registerHelper("concat", function(a, b) {
+        return a + b;
+    });
 }

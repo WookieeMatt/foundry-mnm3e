@@ -10,14 +10,16 @@
                 "intellect": "Intellect",
                 "awareness": "Awareness",
                 "presence": "Presence",
-                "str": "STR",
-                "sta": "STA",
-                "agi": "AGI",
-                "dex": "DEX",
-                "fig": "FIG",
-                "int": "INT",
-                "awa": "AWA",
-                "pre": "PRE"
+                "short": {
+                    "strength": "STR",
+                    "stamina": "STA",
+                    "agility": "AGI",
+                    "dexterity": "DEX",
+                    "fighting": "FIG",
+                    "intellect": "INT",
+                    "awareness": "AWE",
+                    "presence": "PRE"
+                }
             },
             "skills": {
                 "title": "SKILLS",

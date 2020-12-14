@@ -10,14 +10,16 @@
                 "intellect": "Intelecto",
                 "awareness": "Prontidão",
                 "presence": "Presença",
-                "str": "FOR",
-                "sta": "VIG",
-                "agi": "AGI",
-                "dex": "DES",
-                "fig": "LUT",
-                "int": "INT",
-                "awa": "PRO",
-                "pre": "PRE"
+                "short": {
+                    "strength": "FOR",
+                    "stamina": "VIG",
+                    "agility": "AGI",
+                    "dexterity": "DES",
+                    "fighting": "LUT",
+                    "intellect": "INT",
+                    "awareness": "PRO",
+                    "presence": "PRE"
+                }                
             },
             "skills": {
                 "title": "PERÍCIAS",
