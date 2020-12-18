@@ -60,7 +60,7 @@
         ],
         "templates": {
             "itemBase": {
-                "description": "",
+                "description": "Item Description",
                 "category": "",
                 "effect": "",
                 "cost": 0

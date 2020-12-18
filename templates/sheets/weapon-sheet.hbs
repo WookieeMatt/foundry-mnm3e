@@ -26,6 +26,7 @@
                 <td><input name="data.cost" type="text" value="{{data.cost}}" data-dtype="Number"/></td>
             </tr>
         </table>
-        <textarea name="data.description">{{data.description}}</textarea>
+        {{editor content=data.description target="data.description" button=true owner=owner 
+        editable=editable}}
     </div>
 </form>
