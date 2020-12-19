@@ -1,4 +1,47 @@
-<form class="{{cssClass}}" autocomplete="off">
+<form class="cssClass" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{actor.name}}" placeholder="name"/></h1>
+    </header>
+
+    <div class="sidebar1">
+        <table>
+            <tr>
+                <th>{{localize "mnm3e.hero.named.name"}}</th>
+                <th>{{localize "mnm3e.hero.named.total"}}</th>
+                <th>{{localize "mnm3e.hero.named.base"}}</th>
+                <th>{{localize "mnm3e.hero.named.misc"}}</th>
+            </tr>
+             {{#each data.abilities as |ability key|}}
+            <tr>
+            <th class="name" for="data.abilities.{{key}}.value">{{localize (concat "mnm3e.hero.abilities." key)}}</th>
+            <td><input class="total" name="data.abilities.{{key}}.[1].value" value="{{ability.value}}+{{ability.[1].value}}" type="text" data-dtype="Number"/></td>
+            <td><input class="base" name="data.abilities.{{key}}.value" value="{{ability.value}}" type="text" data-dtype="Number"/></td>
+            <td><input class="misc" name="data.abilities.{{key}}.[1].value" value="{{ability.ability-misc.value}}" type="text" data-dtype="Number"/></td>
+            </tr>
+            {{/each}}
+            
+        </table>
+    </div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<form class="{{cssClass}}" autocomplete="off">
     <header class="sheet-header">
         <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="64" width="64"/>
         <h1><input name="name" type="text" value="{{actor.name}}" placeholder="name"/></h1>
@@ -44,4 +87,4 @@
     <div class="hero-defense">
 
     </div>
-</form>
+</form>-->

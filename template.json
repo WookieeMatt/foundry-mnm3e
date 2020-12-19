@@ -5,6 +5,12 @@
         ],
         "templates": {
             "common": {
+                "named": {
+                    "name": "",
+                    "misc": "",
+                    "total": "",
+                    "base": ""
+                },
                 "abilities": {
                     "strength": 0,
                     "stamina": 0,

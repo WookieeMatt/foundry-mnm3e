@@ -29,6 +29,10 @@ async function preloadTemplate(path) {
 
 function registerHandlebarsHelpers() {
     Handlebars.registerHelper("concat", function(a, b) {
-        return a + b;
+        if(b != ""){
+            return a + b;
+        }else{
+            return 0;
+        }
     });
 }

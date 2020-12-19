@@ -1,6 +1,12 @@
 {
     "mnm3e": {
         "hero": {
+            "named":{
+                "name": "Name",
+                "misc": "Misc",
+                "total": "Total",
+                "base": "Base"
+            },
             "abilities": {
                 "strength": "Strength",
                 "stamina": "Stamina",
@@ -21,6 +27,7 @@
                     "presence": "PRE"
                 }
             },
+
             "skills": {
                 "title": "SKILLS",
                 "acrobatics": "Acrobatics",
