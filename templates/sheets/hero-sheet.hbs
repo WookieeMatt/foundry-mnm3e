@@ -15,9 +15,9 @@
              {{#each data.abilities as |ability key|}}
             <tr>
             <th class="name" for="data.abilities.{{key}}.value">{{localize (concat "mnm3e.hero.abilities." key)}}</th>
-            <td><input class="total" name="data.abilities.{{key}}.[1].value" value="{{ability.value}}+{{ability.[1].value}}" type="text" data-dtype="Number"/></td>
+            <!--<td><input class="total" name="data.abilities.{{key}}.value" value="{{ability.value}}" type="text" data-dtype="Number"/></td>-->
             <td><input class="base" name="data.abilities.{{key}}.value" value="{{ability.value}}" type="text" data-dtype="Number"/></td>
-            <td><input class="misc" name="data.abilities.{{key}}.[1].value" value="{{ability.ability-misc.value}}" type="text" data-dtype="Number"/></td>
+            <!--<td><input class="misc" name="data.abilities.{{key}}.value" value="{{ability.ability-misc.value}}" type="text" data-dtype="Number"/></td>-->
             </tr>
             {{/each}}
             
