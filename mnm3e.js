@@ -2,6 +2,9 @@ import { mnm3e } from "./module/config.js"
 import MM3ActorSheet from "./module/sheets/MM3ActorSheet.js"
 import MM3ItemSheet from "./module/sheets/MM3ItemSheet.js"
 
+
+
+
 Hooks.once("init", function() {
     console.log("mnm3e | Initializing Mutants & Masterminds 3e System");
 
@@ -35,13 +38,14 @@ function registerHandlebarsHelpers() {
             return 0;
         }
     });
-    Handlebars.registerHelper("sum", function(a, b){
-        if(b != 0){
-            const c = 0;
-            c=a+b;
-            return c;
-        }else{
-            return 0;
-        }
-    })
+    Handlebars.registerHelper("sum", function(a,b){
+        if (isNumber(a) && isNumber(b)) {
+            return Number(a) + Number(b);
+          }
+          if (typeof a === 'string' && typeof b === 'string') {
+            return a + b;
+          }
+          return '';
+    });
 }
+

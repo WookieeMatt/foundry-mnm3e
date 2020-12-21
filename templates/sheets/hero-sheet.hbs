@@ -11,71 +11,79 @@
         <table>
             <tr>
                 <th>{{localize "mnm3e.hero.named.name"}}</th>
-                <th>{{localize "mnm3e.hero.named.total"}}</th>
                 <th>{{localize "mnm3e.hero.named.base"}}</th>
                 <th>{{localize "mnm3e.hero.named.misc"}}</th>
             </tr>
             <tr>
                 <th class="name" for="data.abilities.strength.value">{{localize "mnm3e.hero.abilities.strength"}}</th>
-                <td><input type="text" id="answer" name="data.total.strength.value" value="" data-dtype="Number"/></td>
                 <td><input type="text" id="value1" name="data.abilities.strength.value" value="{{data.abilities.strength.value}}" data-dtype="Number"/></td>
                 <td><input type="text" id="value2" name="data.misc.strength.value" value="{{data.misc.strength.value}}" data-dtype="Number"/></td>
             </tr>
-
-
-
-            <!--<tr>
+            <tr>
                 <th class="name" for="data.abilities.agility.value">{{localize "mnm3e.hero.abilities.agility"}}</th>
-                <td><input type="text" name="data.total.agility.value" value="" data-dtype="Number"/></td>
                 <td><input type="text" name="data.abilities.agility.value" value="{{data.abilities.agility.value}}" data-dtype="Number"/></td>
                 <td><input type="text" name="data.misc.agility.value" value="{{data.misc.agility.value}}" data-dtype="Number"/></td>
             </tr>
             <tr>
                 <th class="name" for="data.abilities.fighting.value">{{localize "mnm3e.hero.abilities.fighting"}}</th>
-                <td><input type="text" name="data.total.fighting.value" value="" data-dtype="Number"/></td>
                 <td><input type="text" name="data.abilities.fighting.value" value="{{data.abilities.fighting.value}}" data-dtype="Number"/></td>
                 <td><input type="text" name="data.misc.fighting.value" value="{{data.misc.fighting.value}}" data-dtype="Number"/></td>
             </tr>
             <tr>
                 <th class="name" for="data.abilities.awareness.value">{{localize "mnm3e.hero.abilities.awareness"}}</th>
-                <td><input type="text" name="data.total.awareness.value" value="" data-dtype="Number"/></td>
                 <td><input type="text" name="data.abilities.awareness.value" value="{{data.abilities.awareness.value}}" data-dtype="Number"/></td>
                 <td><input type="text" name="data.misc.awareness.value" value="{{data.misc.awareness.value}}" data-dtype="Number"/></td>
             </tr>
             <tr>
                 <th class="name" for="data.abilities.stamina.value">{{localize "mnm3e.hero.abilities.stamina"}}</th>
-                <td><input type="text" name="data.total.stamina.value" value="" data-dtype="Number"/></td>
                 <td><input type="text" name="data.abilities.stamina.value" value="{{data.abilities.stamina.value}}" data-dtype="Number"/></td>
                 <td><input type="text" name="data.misc.stamina.value" value="{{data.misc.stamina.value}}" data-dtype="Number"/></td>
             </tr>            
             <tr>
                 <th class="name" for="data.abilities.dexterity.value">{{localize "mnm3e.hero.abilities.dexterity"}}</th>
-                <td><input type="text" name="data.total.dexterity.value" value="" data-dtype="Number"/></td>
                 <td><input type="text" name="data.abilities.dexterity.value" value="{{data.abilities.dexterity.value}}" data-dtype="Number"/></td>
                 <td><input type="text" name="data.misc.dexterity.value" value="{{data.misc.dexterity.value}}" data-dtype="Number"/></td>
             </tr>
             <tr>
                 <th class="name" for="data.abilities.intellect.value">{{localize "mnm3e.hero.abilities.intellect"}}</th>
-                <td><input type="text" name="data.total.intellect.value" value="" data-dtype="Number"/></td>
                 <td><input type="text" name="data.abilities.intellect.value" value="{{data.abilities.intellect.value}}" data-dtype="Number"/></td>
                 <td><input type="text" name="data.misc.intellect.value" value="{{data.misc.intellect.value}}" data-dtype="Number"/></td>
             </tr>
             <tr>
                 <th class="name" for="data.abilities.presence.value">{{localize "mnm3e.hero.abilities.presence"}}</th>
-                <td><input type="text" name="data.total.presence.value" value="" data-dtype="Number"/></td>
                 <td><input type="text" name="data.abilities.presence.value" value="{{data.abilities.presence.value}}" data-dtype="Number"/></td>
                 <td><input type="text" name="data.misc.presence.value" value="{{data.misc.presence.value}}" data-dtype="Number"/></td>
-            </tr>-->
-
-
-
-
-
-
-
-
-
+            </tr>
         </table>
+        <table>
+            <tr>
+                <th>{{localize "mnm3e.hero.named.name"}}</th>
+                <th>{{localize "mnm3e.hero.named.short"}}</th>
+                <th>{{localize "mnm3e.hero.named.base"}}</th>
+                <th>{{localize "mnm3e.hero.named.misc"}}</th>
+            </tr>
+            <tr>
+                <th class="name" for="data.defense.dodge.value">{{localize "mnm3e.hero.defense.dodge"}}</th>
+                <th class="name">{{localize "mnm3e.hero.abilities.short.agility"}}</th>
+                
+            </tr>
+            <tr>
+                <th class="name" for="data.defense.parry.value">{{localize "mnm3e.hero.defense.parry"}}</th>
+                <th class="name">{{localize "mnm3e.hero.abilities.short.fighting"}}</th>
+            </tr>
+            <tr>
+                <th class="name" for="data.defense.will.value">{{localize "mnm3e.hero.defense.will"}}</th>
+                <th class="name">{{localize "mnm3e.hero.abilities.short.stamina"}}</th>
+            </tr>
+            <tr>
+                <th class="name" for="data.defense.fortitude.value">{{localize "mnm3e.hero.defense.fortitude"}}</th>
+                <th class="name">{{localize "mnm3e.hero.abilities.short.stamina"}}</th>
+            </tr>
+            <tr>
+                <th class="name" for="data.defense.toughness.value">{{localize "mnm3e.hero.defense.toughness"}}</th>
+                <th class="name">{{localize "mnm3e.hero.abilities.short.awareness"}}</th>
+            </tr>
+        </tablle>
     </div>
     </body>
 </form>

@@ -3,9 +3,10 @@
         "hero": {
             "named":{
                 "name": "Name",
-                "misc": "Misc",
+                "misc": "Misc Mod",
                 "total": "Total",
-                "base": "Base"
+                "base": "Base",
+                "short": "Ability Name"
             },
             "abilities": {
                 "strength": "Strength",
@@ -44,6 +45,13 @@
                 "technology": "Technology",
                 "treatment": "Treatment",
                 "vehicles": "Vehicles"
+            },
+            "defense": {
+                "dodge": "Dodge",
+                "parry": "Parry",
+                "will": "Will",
+                "fortitude": "Fortitude",
+                "toughness": "Toughness"
             }
         },
         "weapon": {
