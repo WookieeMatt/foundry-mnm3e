@@ -21,6 +21,16 @@
                     "awareness": 0,
                     "presence": 0
                 },
+                "misc": {
+                    "strength": 0,
+                    "stamina": 0,
+                    "agility": 0,
+                    "dexterity": 0,
+                    "fighting": 0,
+                    "intellect": 0,
+                    "awareness": 0,
+                    "presence": 0
+                },
                 "skills": {
                     "acrobatics": 0,
                     "athletics": 0,

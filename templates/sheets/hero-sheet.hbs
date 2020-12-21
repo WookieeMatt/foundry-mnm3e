@@ -2,8 +2,11 @@
     <header class="sheet-header">
         <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="64" width="64"/>
         <h1><input name="name" type="text" value="{{actor.name}}" placeholder="name"/></h1>
-    </header>
 
+
+
+    </header>
+    <body>
     <div class="sidebar1">
         <table>
             <tr>
@@ -12,79 +15,67 @@
                 <th>{{localize "mnm3e.hero.named.base"}}</th>
                 <th>{{localize "mnm3e.hero.named.misc"}}</th>
             </tr>
-             {{#each data.abilities as |ability key|}}
             <tr>
-            <th class="name" for="data.abilities.{{key}}.value">{{localize (concat "mnm3e.hero.abilities." key)}}</th>
-            <!--<td><input class="total" name="data.abilities.{{key}}.value" value="{{ability.value}}" type="text" data-dtype="Number"/></td>-->
-            <td><input class="base" name="data.abilities.{{key}}.value" value="{{ability.value}}" type="text" data-dtype="Number"/></td>
-            <!--<td><input class="misc" name="data.abilities.{{key}}.value" value="{{ability.ability-misc.value}}" type="text" data-dtype="Number"/></td>-->
+                <th class="name" for="data.abilities.strength.value">{{localize "mnm3e.hero.abilities.strength"}}</th>
+                <td><input type="text" id="answer" name="data.total.strength.value" value="" data-dtype="Number"/></td>
+                <td><input type="text" id="value1" name="data.abilities.strength.value" value="{{data.abilities.strength.value}}" data-dtype="Number"/></td>
+                <td><input type="text" id="value2" name="data.misc.strength.value" value="{{data.misc.strength.value}}" data-dtype="Number"/></td>
             </tr>
-            {{/each}}
-            
+
+
+
+            <!--<tr>
+                <th class="name" for="data.abilities.agility.value">{{localize "mnm3e.hero.abilities.agility"}}</th>
+                <td><input type="text" name="data.total.agility.value" value="" data-dtype="Number"/></td>
+                <td><input type="text" name="data.abilities.agility.value" value="{{data.abilities.agility.value}}" data-dtype="Number"/></td>
+                <td><input type="text" name="data.misc.agility.value" value="{{data.misc.agility.value}}" data-dtype="Number"/></td>
+            </tr>
+            <tr>
+                <th class="name" for="data.abilities.fighting.value">{{localize "mnm3e.hero.abilities.fighting"}}</th>
+                <td><input type="text" name="data.total.fighting.value" value="" data-dtype="Number"/></td>
+                <td><input type="text" name="data.abilities.fighting.value" value="{{data.abilities.fighting.value}}" data-dtype="Number"/></td>
+                <td><input type="text" name="data.misc.fighting.value" value="{{data.misc.fighting.value}}" data-dtype="Number"/></td>
+            </tr>
+            <tr>
+                <th class="name" for="data.abilities.awareness.value">{{localize "mnm3e.hero.abilities.awareness"}}</th>
+                <td><input type="text" name="data.total.awareness.value" value="" data-dtype="Number"/></td>
+                <td><input type="text" name="data.abilities.awareness.value" value="{{data.abilities.awareness.value}}" data-dtype="Number"/></td>
+                <td><input type="text" name="data.misc.awareness.value" value="{{data.misc.awareness.value}}" data-dtype="Number"/></td>
+            </tr>
+            <tr>
+                <th class="name" for="data.abilities.stamina.value">{{localize "mnm3e.hero.abilities.stamina"}}</th>
+                <td><input type="text" name="data.total.stamina.value" value="" data-dtype="Number"/></td>
+                <td><input type="text" name="data.abilities.stamina.value" value="{{data.abilities.stamina.value}}" data-dtype="Number"/></td>
+                <td><input type="text" name="data.misc.stamina.value" value="{{data.misc.stamina.value}}" data-dtype="Number"/></td>
+            </tr>            
+            <tr>
+                <th class="name" for="data.abilities.dexterity.value">{{localize "mnm3e.hero.abilities.dexterity"}}</th>
+                <td><input type="text" name="data.total.dexterity.value" value="" data-dtype="Number"/></td>
+                <td><input type="text" name="data.abilities.dexterity.value" value="{{data.abilities.dexterity.value}}" data-dtype="Number"/></td>
+                <td><input type="text" name="data.misc.dexterity.value" value="{{data.misc.dexterity.value}}" data-dtype="Number"/></td>
+            </tr>
+            <tr>
+                <th class="name" for="data.abilities.intellect.value">{{localize "mnm3e.hero.abilities.intellect"}}</th>
+                <td><input type="text" name="data.total.intellect.value" value="" data-dtype="Number"/></td>
+                <td><input type="text" name="data.abilities.intellect.value" value="{{data.abilities.intellect.value}}" data-dtype="Number"/></td>
+                <td><input type="text" name="data.misc.intellect.value" value="{{data.misc.intellect.value}}" data-dtype="Number"/></td>
+            </tr>
+            <tr>
+                <th class="name" for="data.abilities.presence.value">{{localize "mnm3e.hero.abilities.presence"}}</th>
+                <td><input type="text" name="data.total.presence.value" value="" data-dtype="Number"/></td>
+                <td><input type="text" name="data.abilities.presence.value" value="{{data.abilities.presence.value}}" data-dtype="Number"/></td>
+                <td><input type="text" name="data.misc.presence.value" value="{{data.misc.presence.value}}" data-dtype="Number"/></td>
+            </tr>-->
+
+
+
+
+
+
+
+
+
         </table>
     </div>
+    </body>
 </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--<form class="{{cssClass}}" autocomplete="off">
-    <header class="sheet-header">
-        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="64" width="64"/>
-        <h1><input name="name" type="text" value="{{actor.name}}" placeholder="name"/></h1>
-    </header>
-
-    {{!-- ABILITIES --}}
-    <div class="hero-abilities">
-        {{#each data.abilities as |ability key|}}
-            <div class="hero-ability">
-                <div class="header" for="data.abilities.{{key}}.value">{{localize (concat "mnm3e.hero.abilities.short." key)}}</div>
-                <input class="content" name="data.abilities.{{key}}.value" value="{{ability.value}}" type="text" data-dtype="Number"/>
-            </div>
-        {{/each}}
-    </div>
-
-    {{!-- SKILLS --}}
-    <div class="hero-skills">
-        <div class="header">{{localize "mnm3e.hero.skills.title"}}</div>
-        {{#each data.skills as |skill key|}}
-            <div class="hero-skill">
-                <label>{{localize (concat "mnm3e.hero.skills." key)}}</label>
-                <span><input class="content" name="data.skills.{{key}}.value" value="{{skill.value}}" type="text" data-dtype="Number"/></span>
-            </div>
-        {{/each}}
-    </div>
-    
-    {{!-- ADVANTAGES --}}
-    <div class="hero-advantages">
-
-    </div>
-
-    {{!-- POWERS --}}
-    <div class="hero-pwoers">
-
-    </div>
-
-    {{!-- COMPLICATIONS --}}
-    <div class="hero-complications">
-
-    </div>
-
-    {{!-- DEFENSE --}}
-    <div class="hero-defense">
-
-    </div>
-</form>-->

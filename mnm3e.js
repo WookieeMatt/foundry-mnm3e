@@ -35,4 +35,13 @@ function registerHandlebarsHelpers() {
             return 0;
         }
     });
+    Handlebars.registerHelper("sum", function(a, b){
+        if(b != 0){
+            const c = 0;
+            c=a+b;
+            return c;
+        }else{
+            return 0;
+        }
+    })
 }
