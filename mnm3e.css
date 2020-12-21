@@ -10,12 +10,12 @@
 .mnm3e.sheet.item .sheet-content .editor {
   height: 100%;
 }
-.sheet .column {
+.mnm3e.sheet.hero .column {
   float: left;
-}
-.sheet .left {
   width: 50%;
 }
-.sheet .right {
-  width: 50%;
+.mnm3e.sheet.hero .row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
