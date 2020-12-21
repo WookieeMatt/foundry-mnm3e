@@ -6,7 +6,9 @@
                 "misc": "Misc Mod",
                 "total": "Total",
                 "base": "Base",
-                "short": "Ability Name"
+                "short": "Ability Name",
+                "ability": "Ability",
+                "ranks": "Ranks"
             },
             "abilities": {
                 "strength": "Strength",

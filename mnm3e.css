@@ -10,3 +10,12 @@
 .mnm3e.sheet.item .sheet-content .editor {
   height: 100%;
 }
+.sheet .column {
+  float: left;
+}
+.sheet .left {
+  width: 50%;
+}
+.sheet .right {
+  width: 50%;
+}
