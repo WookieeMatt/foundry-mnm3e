@@ -14,6 +14,7 @@
                 <th>{{localize "mnm3e.hero.named.name"}}</th>
                 <th>{{localize "mnm3e.hero.named.base"}}</th>
                 <th>{{localize "mnm3e.hero.named.misc"}}</th>
+
             </tr>
             <tr>
                 <th class="name" for="data.abilities.strength.value">{{localize "mnm3e.hero.abilities.strength"}}</th>
@@ -56,35 +57,52 @@
                 <td><input type="text" name="data.misc.presence.value" value="{{data.misc.presence.value}}" data-dtype="Number"/></td>
             </tr>
         </table>
-        <table>
+        <table id="Defcount">
             <tr>
                 <th>{{localize "mnm3e.hero.named.name"}}</th>
                 <th>{{localize "mnm3e.hero.named.short"}}</th>
-                <th>{{localize "mnm3e.hero.named.base"}}</th>
+                <th>{{localize "mnm3e.hero.named.ranks"}}</th>
                 <th>{{localize "mnm3e.hero.named.misc"}}</th>
             </tr>
             <tr>
-                <th class="name" for="data.defense.dodge.value">{{localize "mnm3e.hero.defense.dodge"}}</th>
+                <th class="name" for="data.defense">{{localize "mnm3e.hero.defense.dodge"}}</th>
                 <th class="name">{{localize "mnm3e.hero.abilities.short.agility"}}</th>
+                <td><input type="text" id="value1" name="data.defense.dodge.base.value" value="{{data.defense.dodge.base.value}}" data-dtype="Number"/></td>
+                <td><input type="text" id="value1" name="data.defense.dodge.misc.value" value="{{data.defense.dodge.misc.value}}" data-dtype="Number"/></td>
                 
             </tr>
             <tr>
                 <th class="name" for="data.defense.parry.value">{{localize "mnm3e.hero.defense.parry"}}</th>
                 <th class="name">{{localize "mnm3e.hero.abilities.short.fighting"}}</th>
+                <td><input type="text" id="value1" name="data.defense.parry.base.value" value="{{data.defense.parry.base.value}}" data-dtype="Number"/></td>
+                <td><input type="text" id="value1" name="data.defense.parry.misc.value" value="{{data.defense.parry.misc.value}}" data-dtype="Number"/></td>
+                
             </tr>
             <tr>
                 <th class="name" for="data.defense.will.value">{{localize "mnm3e.hero.defense.will"}}</th>
                 <th class="name">{{localize "mnm3e.hero.abilities.short.stamina"}}</th>
+                <td><input type="text" id="value1" name="data.defense.will.base.value" value="{{data.defense.will.base.value}}" data-dtype="Number"/></td>
+                <td><input type="text" id="value1" name="data.defense.will.misc.value" value="{{data.defense.will.misc.value}}" data-dtype="Number"/></td>
+                
             </tr>
             <tr>
                 <th class="name" for="data.defense.fortitude.value">{{localize "mnm3e.hero.defense.fortitude"}}</th>
                 <th class="name">{{localize "mnm3e.hero.abilities.short.stamina"}}</th>
+                <td><input type="text" id="value1" name="data.defense.fortitude.base.value" value="{{data.defense.fortitude.base.value}}" data-dtype="Number"/></td>
+                <td><input type="text" id="value1" name="data.defense.fortitude.misc.value" value="{{data.defense.fortitude.misc.value}}" data-dtype="Number"/></td>
+                
             </tr>
             <tr>
+
                 <th class="name" for="data.defense.toughness.value">{{localize "mnm3e.hero.defense.toughness"}}</th>
                 <th class="name">{{localize "mnm3e.hero.abilities.short.awareness"}}</th>
+                <td><input type="text" id="value1" name="data.defense.toughness.base.value" value="{{data.defense.toughness.base.value}}" data-dtype="Number"/></td>
+                <td><input type="text" id="value1" name="data.defense.toughness.misc.value" value="{{data.defense.toughness.misc.value}}" data-dtype="Number"/></td>
+                
             </tr>
+
         </table>
+
     </div>
     <div class="column">
         <table>
@@ -92,76 +110,97 @@
                 <th>{{localize "mnm3e.hero.named.name"}}</th>
                 <th>{{localize "mnm3e.hero.named.short"}}</th>
                 <th>{{localize "mnm3e.hero.named.ranks"}}</th>
+                <th>{{localize "mnm3e.hero.named.misc"}}</th>
             </tr>
             <tr>
                 <th class="name" for="data.skills">{{localize "mnm3e.hero.skills.acrobatics"}}</th>
                 <th class="name">{{localize "mnm3e.hero.abilities.short.agility"}}</th>
                 <td><input type="text" id="value1" name="data.skills.acrobatics.value" value="{{data.skills.acrobatics.value}}" data-dtype="Number"/></td>
+                <td><input type="text" id="value1" name="data.misc-skills.acrobatics.value" value="{{data.misc-skills.acrobatics.value}}" data-dtype="Number"/></td>
             </tr>
             <tr>
                 <th class="name" for="data.skills">{{localize "mnm3e.hero.skills.athletics"}}</th>
                 <th class="name">{{localize "mnm3e.hero.abilities.short.strength"}}</th>
                 <td><input type="text" id="value1" name="data.skills.athletics.value" value="{{data.skills.athletics.value}}" data-dtype="Number"/></td>
+                <td><input type="text" id="value1" name="data.misc-skills.athletics.value" value="{{data.misc-skills.athletics.value}}" data-dtype="Number"/></td>
             </tr>
             <tr>
                 <th class="name" for="data.skills">{{localize "mnm3e.hero.skills.close-combat"}}</th>
                 <th class="name">{{localize "mnm3e.hero.abilities.short.fighting"}}</th>
                 <td><input type="text" id="value1" name="data.skills.close-combat.value" value="{{data.skills.close-combat.value}}" data-dtype="Number"/></td>
+                <td><input type="text" id="value1" name="data.misc-skills.close-combat.value" value="{{data.misc-skills.close-combat.value}}" data-dtype="Number"/></td>
+
             </tr> 
             <tr>
                 <th class="name" for="data.skills">{{localize "mnm3e.hero.skills.deception"}}</th>
                 <th class="name">{{localize "mnm3e.hero.abilities.short.presence"}}</th>
                 <td><input type="text" id="value1" name="data.skills.deception.value" value="{{data.skills.deception.value}}" data-dtype="Number"/></td>
+                <td><input type="text" id="value1" name="data.misc-skills.deception.value" value="{{data.misc-skills.deception.value}}" data-dtype="Number"/></td>
             </tr>
             <tr>
                 <th class="name" for="data.skills">{{localize "mnm3e.hero.skills.expertise"}}</th>
                 <th class="name">{{localize "mnm3e.hero.abilities.short.intellect"}}</th>
                 <td><input type="text" id="value1" name="data.skills.expertise.value" value="{{data.skills.expertise.value}}" data-dtype="Number"/></td>
+                <td><input type="text" id="value1" name="data.misc-skills.expertise.value" value="{{data.misc-skills.expertise.value}}" data-dtype="Number"/></td>
+
             </tr>
             <tr>
                 <th class="name" for="data.skills">{{localize "mnm3e.hero.skills.insight"}}</th>
                 <th class="name">{{localize "mnm3e.hero.abilities.short.awareness"}}</th>
                 <td><input type="text" id="value1" name="data.skills.insight.value" value="{{data.skills.insight.value}}" data-dtype="Number"/></td>
+                <td><input type="text" id="value1" name="data.misc-skills.insight.value" value="{{data.misc-skills.insight.value}}" data-dtype="Number"/></td>
             </tr>
             <tr>
                 <th class="name" for="data.skills">{{localize "mnm3e.hero.skills.intimidation"}}</th>
                 <th class="name">{{localize "mnm3e.hero.abilities.short.presence"}}</th>
                 <td><input type="text" id="value1" name="data.skills.intimidation.value" value="{{data.skills.intimidation.value}}" data-dtype="Number"/></td>
+                <td><input type="text" id="value1" name="data.misc-skills.intimidation.value" value="{{data.misc-skills.intimidation.value}}" data-dtype="Number"/></td>
+
             </tr>
             <tr>
                 <th class="name" for="data.skills">{{localize "mnm3e.hero.skills.investigation"}}</th>
                 <th class="name">{{localize "mnm3e.hero.abilities.short.intellect"}}</th>
                 <td><input type="text" id="value1" name="data.skills.investigation.value" value="{{data.skills.investigation.value}}" data-dtype="Number"/></td>
+                <td><input type="text" id="value1" name="data.misc-skills.investigation.value" value="{{data.misc-skills.investigation.value}}" data-dtype="Number"/></td>
+
             </tr>
             <tr>
                 <th class="name" for="data.skills">{{localize "mnm3e.hero.skills.ranged-combat"}}</th>
                 <th class="name">{{localize "mnm3e.hero.abilities.short.dexterity"}}</th>
                 <td><input type="text" id="value1" name="data.skills.ranged-combat.value" value="{{data.skills.ranged-combat.value}}" data-dtype="Number"/></td>
+                <td><input type="text" id="value1" name="data.misc-skills.ranged-combat.value" value="{{data.misc-skills.ranged-combat.value}}" data-dtype="Number"/></td>
             </tr>
             <tr>
                 <th class="name" for="data.skills">{{localize "mnm3e.hero.skills.sleight-of-hand"}}</th>
                 <th class="name">{{localize "mnm3e.hero.abilities.short.dexterity"}}</th>
                 <td><input type="text" id="value1" name="data.skills.sleight-of-hand.value" value="{{data.skills.sleight-of-hand.value}}" data-dtype="Number"/></td>
+                <td><input type="text" id="value1" name="data.misc-skills.sleight-of-hand.value" value="{{data.misc-skills.sleight-of-hand.value}}" data-dtype="Number"/></td>
             </tr>
             <tr>
                 <th class="name" for="data.skills">{{localize "mnm3e.hero.skills.stealth"}}</th>
                 <th class="name">{{localize "mnm3e.hero.abilities.short.agility"}}</th>
                 <td><input type="text" id="value1" name="data.skills.stealth.value" value="{{data.skills.stealth.value}}" data-dtype="Number"/></td>
+                <td><input type="text" id="value1" name="data.misc-skills.stealth.value" value="{{data.misc-skills.stealth.value}}" data-dtype="Number"/></td>
+
             </tr>
             <tr>
                 <th class="name" for="data.skills">{{localize "mnm3e.hero.skills.technology"}}</th>
                 <th class="name">{{localize "mnm3e.hero.abilities.short.intellect"}}</th>
                 <td><input type="text" id="value1" name="data.skills.technology.value" value="{{data.skills.technology.value}}" data-dtype="Number"/></td>
+                <td><input type="text" id="value1" name="data.misc-skills.technology.value" value="{{data.misc-skills.technology.value}}" data-dtype="Number"/></td>
             </tr>
             <tr>
                 <th class="name" for="data.skills">{{localize "mnm3e.hero.skills.vehicles"}}</th>
                 <th class="name">{{localize "mnm3e.hero.abilities.short.dexterity"}}</th>
                 <td><input type="text" id="value1" name="data.skills.vehicles.value" value="{{data.skills.vehicles.value}}" data-dtype="Number"/></td>
+                <td><input type="text" id="value1" name="data.misc-skills.vehicles.value" value="{{data.misc-skills.vehicles.value}}" data-dtype="Number"/></td>
             </tr>
-
-
         </table>
     </div>
     </div>
     </body>
+
+    <section class="primary-body">
+
+
 </form>

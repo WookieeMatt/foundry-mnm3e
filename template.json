@@ -57,11 +57,26 @@
 
                 },
                 "defense": {
-                    "dodge": 0,
-                    "parry": 0,
-                    "will": 0,
-                    "fortitude": 0,
-                    "toughness": 0
+                    "dodge": {
+                        "base":0,
+                        "misc":0
+                    },
+                    "parry": {
+                        "base":0,
+                        "misc":0
+                    },
+                    "will":{
+                        "base":0,
+                        "misc":0
+                   },
+                    "fortitude": {
+                        "base":0,
+                        "misc":0
+                    },
+                    "toughness": {
+                        "base":0,
+                        "misc":0
+                    }
                 }
             }
         },
