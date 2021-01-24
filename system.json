@@ -5,7 +5,7 @@
     "version": "0.0.1",
     "author": "Lucas Straub",
     "minimumCoreVersion": "0.7.7",
-    "compatibleCoreVersion": "0.7.7",
+    "compatibleCoreVersion": "0.7.9",
     "esmodules":[
         "mnm3e.js"
     ],
