@@ -3,7 +3,7 @@
         <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="name"/></h1>
     </header>
-    <div>
+    <div class="sheet-content">
         <table>
             <tr>
                 <th>{{localize "mnm3e.armor.category"}}</th>
@@ -24,6 +24,7 @@
                 <td><input name="data.cost" type="text" value="{{data.cost}}" data-dtype="Number"/></td>
             </tr>
         </table>
-        <textarea name="data.description">{{data.description}}</textarea>
+        {{editor content=data.description target="data.description" button=true owner=owner 
+        editable=editable}}
     </div>
 </form>
