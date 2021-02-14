@@ -1,9 +1,23 @@
 <form class="cssClass" autocomplete="off">
     <header class="sheet-header">
         <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="64" width="64"/>
-        <h1><input name="name" type="text" value="{{actor.name}}" placeholder="name"/></h1>
+        <section class="header-details flexrow">
+            <h1>
+                <input name="name" type="text" value="{{actor.name}}" placeholder="name"/>
+            </h1>
 
-<!-- test comment -->
+            <aside class="header-exp flexcol">
+                <div class="charlevel" title="character level">
+                    <label><input type="number" value="{{actor.level}}" placeholder="Character Level"/></label>
+                    <span class="levels">{{classLabels}}</span>
+                </div>
+
+                <div class="charpointstotal" title="victory points">
+                    <label><input type="number" value="{{actor.level}}" placeholder="Victory Points Total"/></label>
+                    <span class="levels">{{classLabels}}</span>
+                </div>
+            </aside>
+
 
     </header>
     <body>
