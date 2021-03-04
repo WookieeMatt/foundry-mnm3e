@@ -6,20 +6,10 @@
     <div class="sheet-content">
         <table>
             <tr>
-                <th>{{localize "mnm3e.armor.category"}}</th>
                 <th>{{localize "mnm3e.armor.effect"}}</th>
                 <th>{{localize "mnm3e.armor.cost"}}</th>
             </tr>
             <tr>
-                <td>
-                    <select name="data.category">
-                        {{#select data.category}}
-                        {{#each config.armorCategories as |name category|}}
-                        <option value="{{category}}">{{localize name}}</option>
-                        {{/each}}
-                        {{/select}}
-                    </select>
-                </td>
                 <td><input name="data.effect" type="text" value="{{data.effect}}" data-dtype="String"/></td>
                 <td><input name="data.cost" type="text" value="{{data.cost}}" data-dtype="Number"/></td>
             </tr>

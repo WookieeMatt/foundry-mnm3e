@@ -6,7 +6,7 @@ export default class MM3ActorSheet extends ActorSheet {
     static get defaultOptions(){
         return mergeObject(super.defaultOptions, {
             width: 750,
-            height: 600,
+            height: 625,
             classes: ["mnm3e", "sheet", "hero"]
         });
     }

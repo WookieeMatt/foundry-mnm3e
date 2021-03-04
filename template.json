@@ -1,7 +1,8 @@
 {
     "Actor": {
         "types": [
-            "hero"
+            "hero",
+            "supervillain"
         ],
         "templates": {
             "common": {
@@ -82,12 +83,16 @@
         },
         "hero": {
             "templates": ["common"]
+        },
+        "supervillain": {
+            "templates": ["common"]
         }
     },
     "Item": {
         "types": [
             "weapon",
-            "armor"
+            "armor",
+            "item"
         ],
         "templates": {
             "itemBase": {
@@ -102,7 +107,10 @@
             "critical": 20
         },
         "armor": {
-            "templates": ["itemBse"]
+            "templates": ["itemBase"]
+        },
+        "item": {
+            "templates": ["itemBase"]
         }
     }
 }

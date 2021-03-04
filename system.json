@@ -1,11 +1,11 @@
 {
     "name": "mnm3e",
-    "title": "Mutantns & Masterminds 3e",
+    "title": "Mutants & Masterminds 3e",
     "description": "",
     "version": "0.0.1",
-    "author": "Lucas Straub",
+    "author": "Lucas Straub, Matt Rimler",
     "minimumCoreVersion": "0.7.7",
-    "compatibleCoreVersion": "0.7.7",
+    "compatibleCoreVersion": "0.7.9",
     "esmodules":[
         "mnm3e.js"
     ],
